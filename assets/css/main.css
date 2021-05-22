@@ -1,0 +1,46 @@
+body {
+    padding-top: 60px;
+    padding-bottom: 40px;
+}
+
+.row {
+    margin-bottom: 24px;
+}
+
+#moab-map {
+    border: 1px solid #999;
+}
+
+table.trail-info-table th {
+    width: 150px;
+}
+
+table.mileage-table td {
+    padding: 4px;
+}
+
+table.mileage-table tr.last {
+    border-top: 1px solid #dddddd;
+}
+table.mileage-table td.mileage {
+    text-align: right;
+}
+table.mileage-table td.pad {
+    padding-right: 24px;
+}
+
+table.mileage-table th {
+    text-align: center;
+}
+.info-section {
+    padding-top: 14px;
+}
+
+img.photo {
+    border: 1px solid #ababab9;
+    margin-bottom: 12px;
+}
+
+ul.glance li {
+    margin-bottom: 8px;
+}
