@@ -11,6 +11,8 @@
     <!-- Bootstrap core CSS.  Hey, rwv you got this from here: https://getbootstrap.com/docs/3.4/getting-started/ -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
     <link href="assets/css/main.css" rel="stylesheet">
+    <!-- image modal -->
+    <link href="assets/css/my-image-modal.css" rel="stylesheet">
 </head>
 
 <body>
@@ -19,7 +21,10 @@
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
 
-    <div class="container">
+    <!-- from https://www.w3schools.com/howto/howto_css_modal_images.asp -->
+    <script src="assets/js/my-image-modal.js"></script>
+    
+<div class="container">
 
 <div class="jumbotron">
     <h1>Main Fork of the Salmon</h1>
@@ -265,72 +270,121 @@
 
 
 <div class="row">
+    <div class="col-md-5">
+        <h3>What to Know, Before You Go</h3>
+       <ul>
+           <li>Boating in the Main Fork of the Salmon <a href="https://www.fs.usda.gov/detail/scnf/recreation/wateractivities/?cid=stelprdb5303132">Info from National Forest Service</a></li>
+        </ul>
+       <p>Some highlights include:</p>
+       <ul>
+           <li><strong>Be Prepared.</strong> This is a river trip into the rugged wilderness. Backcountry travelers must be prepared for varying,
+               unpredictable weather conditions and should be aware of potential dangers in this environment.</li>
+           <li>All garbage, both organic and inorganic, will be carried out.</li>
+           <li>Groovers (toilets) are provided by our group at each campsite. Backcountry regulations require that human waste and toilet paper
+               be packed out of the backcountry. In short, we'll all share in the duties of taking care of this nasty little necessity.</li>
+           <li>Respect for cultural sites. All natural objects and cultural artifacts are protected and must be left where they're found.</li>
+          </ul>
+
+   </div>
     <div class="col-md-7 pull-right">
         <a name="bring"></a>
         <h3>What to Bring</h3>
         <p>Each individual will be responsible for the following items.
-            Please try to get as much of your gear as you can into a single large river bag.</p>
-        <p>River bags will be rented along with our boats for your use. Please let us know if you need a river dry bag.</p>
+        <p>Please try to get as much of your gear as you can into a single large river bag.
+        River bags will be rented along with our boats for your use. Please let us know if you need a river dry bag.</p>
+        <h3>Check list</h3> 
         <ul>
             <li><strong>River gear</strong></li>
             <ul>
-                <li>PFD | if you don't have one we'll rent one for you.</li>
-                <li>River shoes or sandels | protect your feet in the event you take a swim.</li>
-                <li>Appropriate River wear | What to wear if we take a swim, or just to stay warm</li>
-                <li>Sun protection | sun glasses, hat, sun screen, sun sleeves, buff, sarong, etc.</li>
-                <li>Day-use dry bag | small dry bag (9” x 20”) to store things you may need during the day.</li>
-                <li>Carabiners | nice for clipping-in your water bottle & day-use dry bag</li>
-                <li><strong>Hydration system</strong> | Water bottle, beer, soda, etc.</li>
+                <input type="checkbox"checked > PFD | if you don't have one we'll rent one for you.
+            </ul>
+            <ul>
+                <input type="checkbox"> River shoes or sandels | protect your feet in the event you take a swim.
+            </ul>
+            <ul>
+                <input type="checkbox"> River scocks | (cold & sun) no cotton, some like neoprene for cold
+            </ul>
+            <ul>
+                <input type="checkbox"> Cold River wear | dry top & pants or rain jacket & ain pants
+            </ul>
+            <ul>
+                <input type="checkbox"> Sun protection | sun glasses, hat, sun screen, sun sleeves, buff, sarong, etc.
+            </ul>
+            <ul>
+                <input type="checkbox"> Carabiners | nice for clipping-in your water bottle & day-use dry bag
+            </ul>
+            <ul>
+                <input type="checkbox"> <strong>Hydration system</strong> | Water bottle, beer, soda, etc.
             </ul>
             <li><strong>Sleeping gear</strong></li>
             <ul>
-                <li>Tent | small lightweight tent (consider sharing to save packing space)</li>
-                <li>Sleeping bag & pad | small lightweight pillow</li>
+                <input type="checkbox"> Tent | small lightweight tent (consider sharing to save packing space)
+            </ul>
+            <ul>
+                <input type="checkbox"> Sleeping bag & pad | small lightweight pillow
             </ul>
             <li><strong>Camp gear</strong></li>
-            <ul>
-                <li>Camp chair | everyone is responsible for bringing their own camp chair.</li>
-                <li>Coffee mug | used at breakfast and dinner</li>
-                <li>Wet weather gear | let's hope we don't need it, but bring it.</li>
-                <li>Hiking shoes/sandals | for when the river gear comes off.</li>
-                <li>Toiletries | toothbrush & paste, soap, towel, bug spray, etc.</li>
-                <li>Sun protection | hat, sunglasses, sunscreen, etc.</li>
-                <li>Headlamp | flashlight</li>
-                <li>Pesonal | Camera, etc.</li>
-             </ul>
-            <li><strong>Pro Tips</strong></li>
-            <ul>
-                <li>Since weather conditions can be unpredictable, it's recommended having a two-piece rain suit, jacket with hood and rains pants, available during the day which can be packed into your day-use dry bag.</li>
-                <li>Pillow, small camp pillow stuffed at the bottom of your dry bag.</li>
-                <li>Pack light! You have to haul what you bring. Dirty on a river trip is quite fasionable.</li>
-                <li>Plastic bags. Garbage sized for wet clothes and ziplock freezer size.</li>
-            </ul>
+   
+                <ul>
+                    <input type="checkbox"> Camp chair | everyone is responsible for bringing their own camp chair.
+                </ul>
+                <ul>
+                    <input type="checkbox"> Coffee mug | used at breakfast and dinner
+                </ul>
+                <ul>
+                    <input type="checkbox"> Wet weather gear | let's hope we don't need it, but bring it.
+                </ul>
+                <ul>
+                    <input type="checkbox"> Hiking shoes/sandals | for when the river gear comes off.
+                </ul>
+                <ul>
+                    <input type="checkbox"> Toiletries | toothbrush & paste, soap, towel, bug spray, etc.
+                </ul>
+                <ul>
+                    <input type="checkbox"> Headlamp | flashlight
+                </ul>
+                <ul>
+                    <input type="checkbox"> Sun protection | hat, sunglasses, sunscreen, etc.
+                </ul>
+                <ul>
+                    <input type="checkbox"> Pesonal | Camera, etc.
+                </ul>
+    </div>
+    
+    <div class="col-md-12">
+        <h4><strong>Pro Tips</strong></h4>
+        <ul>
+            <li>Since weather conditions can be unpredictable, so a small day-use dry bag to carry to carry rain gear or suns gear that you may need on the river is more than handy.</li>
+            <li>Pack light. Dirty on a river trip is quite fasionable. Besides that, we have to haul everything.</li>
+            <li>Pillow, small camp pillow stuffed at the bottom of your dry bag.</li>  
+            <li>Plastic bags. Garbage sized for wet clothes in dry bag, and several ziplock freezer size.</li>
+            <li>Anyone questions about what to bring please ask a river buddy (call us).</li>
         </ul>
     </div>
-    <div class="col-md-5">
-         <h3>What to Know, Before You Go</h3>
-        <!--<p class="text-primary">More to come...</p>-->
-        <ul>
-            <li>Boating in the Main Fork of the Salmon <a href="https://www.fs.usda.gov/detail/scnf/recreation/wateractivities/?cid=stelprdb5303132">Info from National Forest Service</a></li>
-         </ul>
-        <p>Some highlights include:</p>
-        <ul>
-            <li><strong>Be Prepared.</strong> This is a river trip into the rugged wilderness. Backcountry travelers must be prepared for varying,
-                unpredictable weather conditions and should be aware of potential dangers in this environment.</li>
-            <li>All garbage, both organic and inorganic, will be carried out.</li>
-            <li>Groovers (toilets) are provided by our group at each campsite. Backcountry regulations require that human waste and toilet paper
-                be packed out of the backcountry. In short, we'll all share in the duties of taking care of this nasty little necessity.</li>
-            <li>Respect for cultural sites. All natural objects and cultural artifacts are protected and must be left where they're found.</li>
-           </ul>
 
+    <div class="row">
+        <div class="col-md-5">
+            <h5><strong>Michael'spacking list</strong> (click on it to read)</h5>
+
+        <!-- Trigger the Modal -->
+        <img id="myImg" src="assets/images/michael-20-year-old-packing-list.jpg" alt="Michael's packing list" style="width:100%;max-width:300px">
+        <div id="myModal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="img01">
+            <div id="caption"></div>
+        </div>
+        </div>
+
+        <div class="col-md-7 pull-right">
+            <div class="col-md-12">
+
+        <h5><strong>What do the outfitter's suggest?</strong></h5>
+        
+        <a href="https://www.westernriver.com/downloads/packing-lists/middle_fork_salmon.pdf" target="_blank" rel="noopener noreferrer">Western Rivers - packing list.</a></p>
+        <a href=" https://canyonsinc.com/logistics/what-to-bring/" target="_blank" rel="noopener noreferrer" >Canyon's Inc. - packing list + video.</a></p>
     </div>
-    <!--
-    <div class="col-md-12" style="text-align:center; margin-top:24px; padding-top:24px; border-top: 1px solid #999;">
-        <img src="assets/img/what-a-feeling.jpg" class="img-rounded photo" id="what-a-feeling-photo"/>
-    </div>
-    -->
+
 </div>
-
 
 <div class="row">
 <div class="col-md-12">
@@ -411,17 +465,17 @@
         </div>
         <ul>
             <li><p> If you add the two Shoup, ID readings, one for the Salmon and one for the Middle Fork, you will get the flow at Corn Creek.</p></li>
-            <p><a href="https://waterdata.usgs.gov/id/nwis/uv/?site_no=13307000&PARAmeter_cd=00065,00060">SALMON RIVER NR SHOUP ID</a></p>
-            <p><a href="https://waterdata.usgs.gov/id/nwis/uv/?site_no=13310199&PARAmeter_cd=00065,00060">MF SALMON RIVER AT MOUTH NR SHOUP, ID</a></p>
+            <p><a href="https://waterdata.usgs.gov/id/nwis/uv/?site_no=13307000&PARAmeter_cd=00065,00060" target="_blank" rel="noopener noreferrer">SALMON RIVER NR SHOUP ID</a></p>
+            <p><a href="https://waterdata.usgs.gov/id/nwis/uv/?site_no=13310199&PARAmeter_cd=00065,00060" target="_blank" rel="noopener noreferrer">MF SALMON RIVER AT MOUTH NR SHOUP, ID</a></p>
             <p></p>
             <li><p> Downstream at river mile 36, just before Big Mallard, there's a river monitoring station at Yellow Pine.</p></li>
-            <p><a href="https://waterdata.usgs.gov/id/nwis/uv/?site_no=13309220&PARAmeter_cd=00065,00060">MF SALMON RIVER AT MF LODGE NR YELLOW PINE ID</a></p>
+            <p><a href="https://waterdata.usgs.gov/id/nwis/uv/?site_no=13309220&PARAmeter_cd=00065,00060" target="_blank" rel="noopener noreferrer">MF SALMON RIVER AT MF LODGE NR YELLOW PINE ID</a></p>
         </ul>
 
         <h2>Weather</h2>
         <ul>
-            <li><p><a href="https://forecast.weather.gov/MapClick.php?lat=45.4404&lon=-113.9882#.YKuWH5NKiDU">Weather Forecast for North Fork, Idaho - near put-in.</a></p></li>
-            <li><p><a href="https://forecast.weather.gov/MapClick.php?lat=44.9618&lon=-115.4918#.YKuX_pNKiDU">Weather Forecast for Yellow Pine, Idaho - midway</a></p></ul>
+            <li><p><a href="https://forecast.weather.gov/MapClick.php?lat=45.4404&lon=-113.9882#.YKuWH5NKiDU" target="_blank" rel="noopener noreferrer">Weather Forecast for North Fork, Idaho - near put-in.</a></p></li>
+            <li><p><a href="https://forecast.weather.gov/MapClick.php?lat=44.9618&lon=-115.4918#.YKuX_pNKiDU" target="_blank" rel="noopener noreferrer">Weather Forecast for Yellow Pine, Idaho - midway</a></p></ul>
         </ul>
 
 
